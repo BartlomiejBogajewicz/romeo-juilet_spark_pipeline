@@ -51,4 +51,4 @@ with DAG("spark_dag", start_date=datetime(2021, 1 ,1),
     )
 
 
-saving_rates >> creating_forex_rates_table >> spark_job
+saving_rates >> create_romeo_table >> spark_job
