@@ -29,7 +29,7 @@ with DAG("spark_dag", start_date=datetime(2021, 1 ,1),
         """
     )
 
-    creating_forex_rates_table = HiveOperator(
+    create_romeo_table = HiveOperator(
         task_id="create_romeo_tab",
         hive_cli_conn_id="hive_conn",
         hql="""
